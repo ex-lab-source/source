@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   downloadBtn.addEventListener('click', function() {
     // Start the download
-    const downloadLink = 'bitbucket.org/gemlauncher/gemlauncher/downloads/Lunarix.rar';
+    const downloadLink = 'bitbucket.org/gemlauncher/gemlauncher/downloads/Luna.zip';
     const link = document.createElement('a');
     link.href = 'https://' + downloadLink;
     link.target = '_blank';
