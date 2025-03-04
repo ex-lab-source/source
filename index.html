@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Files Download</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="download-card">
+      <div class="card-header">
+        <i class="fas fa-file-archive icon-large"></i>
+        <h1>GAME ARCHIVE</h1>
+      </div>
+      <div class="file-info">
+        <div class="info-item">
+          <i class="fas fa-hdd"></i>
+          <span>Size: 31.2 MB</span>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-calendar-alt"></i>
+          <span id="current-date">Updated: May 15, 2024</span>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-download"></i>
+          <span>Downloads: 13,457</span>
+        </div>
+      </div>
+      <div class="description">
+        <p>This archive contains all game files including textures, maps, and bonus content. Extract using any archiving tool.</p>
+      </div>
+      <button id="download-btn" class="download-button">
+        <i class="fas fa-download"></i> DOWNLOAD NOW
+      </button>
+      <div class="secure-notice">
+        <i class="fas fa-shield-alt"></i>
+        <span>Secure Download • Virus Checked</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="password-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2><i class="fas fa-key"></i> ARCHIVE PASSWORD</h2>
+      </div>
+      <div class="modal-body">
+        <div class="password-container">
+          <p class="password" id="password-text">2025</p>
+          <button id="copy-btn" class="copy-button">
+            <i class="fas fa-copy"></i>
+          </button>
+        </div>
+        <p id="copy-status" class="copy-status"></p>
+        <p class="note">Keep this password for later. You will need it to extract the files.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
