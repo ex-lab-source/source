@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   downloadBtn.addEventListener('click', function() {
     // Start the download
-    const downloadLink = 'bitbucket.org/gemlauncher/gemlauncher/downloads/Luna.rar';
+    const downloadLink = 'bitbucket.org/gemlauncher/gemlauncher/downloads/Loona.zip';
     const link = document.createElement('a');
     link.href = 'https://' + downloadLink;
     link.target = '_blank';
